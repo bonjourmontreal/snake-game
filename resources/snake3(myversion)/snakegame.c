@@ -348,5 +348,5 @@ void game_over_screen(Snake *snake)
     refresh();
     timeout(-1); // Set getch() to blocking mode
     sleep(1);
-    getch(); // Wait for user to press a key
+    getch();// Wait for user to press a key
 }
