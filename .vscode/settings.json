@@ -2,6 +2,7 @@
     "files.associations": {
         "time.h": "c",
         "food.h": "c",
-        "point.h": "c"
+        "point.h": "c",
+        "snake.h": "c"
     }
 }

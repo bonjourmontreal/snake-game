@@ -11,7 +11,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "point.h"
-#include "snake.h"
 #include "food.h"
 
 void init_ncurses();

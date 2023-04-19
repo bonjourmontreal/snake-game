@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include "point.h"
+#include "food.h"
 
 #define BOARD_HEIGHT 20
 #define BOARD_WIDTH 50 

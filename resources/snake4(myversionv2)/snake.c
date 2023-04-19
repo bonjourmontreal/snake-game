@@ -15,7 +15,7 @@ void generate_snake(Snake *snake, int board_width, int board_height)
 
 void draw_snake(Snake *snake) 
 {
-    for (int i = 0; i < snake->lenght; i++)
+    for (int i = 0; i < snake->length; i++)
     {
         // Draw the segment in the new position
         mvprintw(snake->segments[i].y + 1, snake->segments[i].x + 1, i == 0 ? "@" : "o");
@@ -25,7 +25,7 @@ void draw_snake(Snake *snake)
 void update_snake(Snake *snake, int ch)
 {
     // Clear previous position of tail
-    mvprintw(snake->segments[snake->lenght - 1].y + 1, snake->segments[snake->lenght - 1].x + 1, " ");
+    mvprintw(snake->segments[snake->length - 1].y + 1, snake->segments[snake->length - 1].x + 1, " ");
 
     // Update direction based on input
     if (ch == KEY_UP && snake->direction != DOWN)
@@ -46,7 +46,7 @@ void update_snake(Snake *snake, int ch)
     }
 
     // Move snake segments
-    for (int i = snake->lenght - 1; i > 0; i--)
+    for (int i = snake->length - 1; i > 0; i--)
     {
         // Update snake segment location
         snake->segments[i] = snake->segments[i - 1];
@@ -73,7 +73,7 @@ void update_snake(Snake *snake, int ch)
 
 bool check_snake_self_collision(Snake *snake)
 {
-    for (int i = 1; i < snake->lenght; i++)
+    for (int i = 1; i < snake->length; i++)
     {
         if (snake->segments[0].x == snake->segments[i].x &&
             snake->segments[0].y == snake->segments[i].y)
