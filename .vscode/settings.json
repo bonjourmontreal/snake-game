@@ -1,8 +1,4 @@
 {
-    "files.associations": {
-        "time.h": "c",
-        "food.h": "c",
-        "point.h": "c",
-        "snake.h": "c"
-    }
-}
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "git.path": "/usr/bin/git"
+  }

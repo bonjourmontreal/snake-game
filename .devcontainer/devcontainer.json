@@ -2,8 +2,6 @@
   "name": "C with ncurses",
   "image": "ubuntu:latest",
   "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
-  "postCreateCommand": "apt-get update && apt-get install -y build-essential gdb ncurses-dev"
+  "settingsPath": ".vscode/settings.json",
+  "postCreateCommand": "apt-get update && apt-get install -y build-essential gdb ncurses-dev git"
 }

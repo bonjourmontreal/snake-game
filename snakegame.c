@@ -1,4 +1,3 @@
-// Snake Game
 // Use arrow keys to control the snake
 // Eat food (*) to increase the snake's length
 // Avoid hitting the snake's body or the walls
