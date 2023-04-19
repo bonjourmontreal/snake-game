@@ -3,6 +3,7 @@
 // Avoid hitting the snake's body or the walls
 // Press 'q' or 'Q' to quit the game
 //
+//
 // Compile: gcc -o snakegame snakegame.c -lncurses
 // Run: ./snakegame
 
