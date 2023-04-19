@@ -1,7 +1,7 @@
 # snake-game
-First repository on GitHub. Used for a Snake Game made in C.
+First repository on GitHub. 
 
-Snake Game
+Used for a Snake Game made in C.
 
 Use arrow keys to control the snake
 Eat food (*) to increase the snake's length
