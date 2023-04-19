@@ -1,6 +1,9 @@
 #ifndef FOOD_H
 #define FOOD_H
 
+typedef struct Snake Snake; // Add this line
+typedef struct Food Food;   // Add this line
+
 #include <stdbool.h>
 #include "point.h"
 

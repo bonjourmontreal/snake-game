@@ -8,6 +8,11 @@
 // Run: ./snakegame
 
 #include <ncurses.h>
+
+#define BOARD_WIDTH 20
+#define BOARD_HEIGHT 20
+#define INITIAL_SNAKE_LENGTH 4
+
 #include <stdlib.h>
 #include <time.h>
 #include "point.h"
