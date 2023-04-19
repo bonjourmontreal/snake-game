@@ -4,12 +4,12 @@
 #include <stdbool.h>
 #include "point.h"
 
+#define BOARD_HEIGHT 20
+#define BOARD_WIDTH 50 
 #define MAX_SNAKE_LENGTH (BOARD_HEIGHT * BOARD_WIDTH)
 #define INITIAL_SNAKE_LENGTH 3
 #define INITIAL_GAME_SPEED 100
 #define SCORE_BOARD_HEIGHT 1
-
-typedef struct Food Food; // Forward declaration
 
 typedef enum
 {

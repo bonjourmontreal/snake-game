@@ -1,11 +1,13 @@
 #include <ncurses.h>
 #include <stdlib.h>
+#include "point.h"
+typedef struct Food Food; // Forward declaration
 #include "snake.h"
 #include "food.h"
 
 void generate_snake(Snake *snake, int board_width, int board_height)
 {
-    snake->lenght = INITIAL_SNAKE_LENGTH;
+    snake->length = INITIAL_SNAKE_LENGTH;
     snake->direction = RIGHT;
     snake->segments[0].x = BOARD_WIDTH / 2;
     snake->segments[0].y = BOARD_HEIGHT / 2;

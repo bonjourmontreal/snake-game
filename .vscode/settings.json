@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "time.h": "c",
-        "food.h": "c"
+        "food.h": "c",
+        "point.h": "c"
     }
 }

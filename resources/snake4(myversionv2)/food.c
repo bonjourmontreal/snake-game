@@ -1,5 +1,7 @@
 #include <ncurses.h>
 #include <stdlib.h>
+#include "point.h"
+typedef struct Snake Snake; // Forward declaration
 #include "food.h"
 #include "snake.h"
 

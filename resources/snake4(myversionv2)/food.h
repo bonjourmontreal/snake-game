@@ -4,8 +4,6 @@
 #include <stdbool.h>
 #include "point.h"
 
-typedef struct Snake Snake; // Forward declaration
-
 typedef struct
 {
     Point position;
