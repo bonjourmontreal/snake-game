@@ -7,10 +7,13 @@
 // Compile: gcc -o snakegame snakegame.c -lncurses
 // Run: ./snakegame
 
+#define BOARD_HEIGHT 20
+#define BOARD_WIDTH 50 
+
 #include <ncurses.h>
-#include <time.h> // time()
-#include <stdlib.h> // srand()
-#include "config.h"
+#include <stdlib.h>
+#include <time.h>
+#include "point.h"
 #include "snake.h"
 #include "food.h"
 

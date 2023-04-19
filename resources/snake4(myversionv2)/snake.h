@@ -2,13 +2,14 @@
 #define SNAKE_H
 
 #include <stdbool.h>
-#include "food.h"
 #include "point.h"
 
 #define MAX_SNAKE_LENGTH (BOARD_HEIGHT * BOARD_WIDTH)
 #define INITIAL_SNAKE_LENGTH 3
 #define INITIAL_GAME_SPEED 100
 #define SCORE_BOARD_HEIGHT 1
+
+typedef struct Food Food; // Forward declaration
 
 typedef enum
 {

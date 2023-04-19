@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "point.h"
 
-struct Snake;  // Forward declare the Snake struct
+typedef struct Snake Snake; // Forward declaration
 
 typedef struct
 {
@@ -12,8 +12,8 @@ typedef struct
     bool active;
 } Food;
 
-void generate_food(Food *food, struct Snake *snake, int board_width, int board_height);
+void generate_food(Food *food, Snake *snake, int board_width, int board_height);
+bool check_snake_food_collision(Snake *snake, Food *food);
 void draw_food(Food *food);
-bool check_snake_food_collision(struct Snake *snake, Food *food);
 
 #endif // FOOD_H
